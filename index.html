@@ -2,16 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Saudha Hibathullah | Data Scientist & Analyst</title>
+        <title>Saudha Hibathullah</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Data Scientist, Data Analyst, Python, SQL, Power BI, Tableau" name="keywords">
-        <meta content="Saudha Hibathullah - Data Specialist transforming messy data into actionable insights with ML, AI, and advanced analytics." name="description">
+        <meta content="SaudhaTheDataSpecialist" name="keywords">
+        <meta content="SaudhaTheDataSpecialist" name="description">
 
         <!-- Favicon -->
         <link href="img/favicon.ico" rel="icon">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
 
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -20,322 +20,15 @@
         <link href="lib/slick/slick-theme.css" rel="stylesheet">
         <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-        <!-- Animate.css for scroll animations -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-
-        <style>
-            /* ===== CUSTOM PRO UPGRADES ===== */
-            
-            /* Smooth scrolling */
-            html {
-                scroll-behavior: smooth;
-            }
-            
-            /* Glass morphism effect on sidebar */
-            .sidebar {
-                background: linear-gradient(135deg, rgba(44, 44, 44, 0.98) 0%, rgba(30, 30, 30, 0.98) 100%);
-                backdrop-filter: blur(0px);
-                box-shadow: 2px 0 20px rgba(0,0,0,0.3);
-            }
-            
-            /* Enhanced header text animation */
-            .header h1 {
-                background: linear-gradient(135deg, #fff 0%, #ddd 100%);
-                -webkit-background-clip: text;
-                background-clip: text;
-                color: transparent;
-                text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-            }
-            
-            /* Professional typed text styling */
-            .typed-text {
-                font-size: 1.5rem;
-                font-weight: 500;
-                color: #e0e0e0;
-                letter-spacing: 1px;
-            }
-            
-            /* Service cards with hover effects */
-            .srv-col {
-                transition: all 0.3s ease;
-                border-radius: 8px;
-                padding: 25px;
-                background: rgba(255,255,255,0.03);
-                margin-bottom: 20px;
-            }
-            
-            .srv-col:hover {
-                transform: translateY(-5px);
-                background: rgba(255,255,255,0.08);
-                box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            }
-            
-            .srv-col i {
-                transition: transform 0.3s ease;
-            }
-            
-            .srv-col:hover i {
-                transform: scale(1.1);
-            }
-            
-            /* Portfolio item enhancements */
-            .portfolio-wrap figure {
-                overflow: hidden;
-                border-radius: 12px;
-                transition: all 0.3s ease;
-            }
-            
-            .portfolio-wrap figure img {
-                transition: transform 0.5s ease;
-            }
-            
-            .portfolio-wrap:hover figure img {
-                transform: scale(1.05);
-            }
-            
-            .portfolio-wrap .link-details,
-            .portfolio-wrap .link-preview {
-                transition: all 0.3s ease;
-            }
-            
-            .portfolio-wrap:hover .link-details,
-            .portfolio-wrap:hover .link-preview {
-                transform: translateY(-5px);
-            }
-            
-            .portfolio-title span {
-                font-size: 0.8rem;
-                opacity: 0.8;
-            }
-            
-            /* Button enhancements */
-            .btn {
-                transition: all 0.3s ease;
-                border-radius: 25px;
-                padding: 10px 25px;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-            }
-            
-            .btn:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            }
-            
-            .large-btn .btn {
-                margin: 0 10px;
-            }
-            
-            /* Contact form enhancements */
-            .form-control {
-                border-radius: 8px;
-                transition: all 0.3s ease;
-                background: rgba(255,255,255,0.05);
-                border: 1px solid rgba(255,255,255,0.1);
-                color: #fff;
-            }
-            
-            .form-control:focus {
-                background: rgba(255,255,255,0.1);
-                border-color: #e0a800;
-                box-shadow: 0 0 10px rgba(224,168,0,0.3);
-                color: #fff;
-            }
-            
-            .contact-info p {
-                transition: all 0.3s ease;
-                padding: 8px 0;
-            }
-            
-            .contact-info p:hover {
-                transform: translateX(5px);
-            }
-            
-            /* Social media icons */
-            .social .btn {
-                border-radius: 50%;
-                width: 40px;
-                height: 40px;
-                padding: 0;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 5px;
-            }
-            
-            .social .btn:hover {
-                transform: translateY(-3px);
-            }
-            
-            /* Filter buttons enhancement */
-            #portfolio-flters li {
-                transition: all 0.3s ease;
-                border-radius: 20px;
-                padding: 8px 18px;
-                margin: 5px;
-                cursor: pointer;
-            }
-            
-            #portfolio-flters li:hover {
-                transform: translateY(-2px);
-                background: #e0a800 !important;
-                color: #1a1a1a !important;
-            }
-            
-            #portfolio-flters li.filter-active {
-                background: #e0a800;
-                color: #1a1a1a;
-                box-shadow: 0 4px 12px rgba(224,168,0,0.3);
-            }
-            
-            /* Scroll to top button enhancement */
-            .back-to-top {
-                transition: all 0.3s ease;
-                border-radius: 50%;
-                width: 45px;
-                height: 45px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .back-to-top:hover {
-                transform: translateY(-3px);
-                background: #e0a800 !important;
-            }
-            
-            /* Content header styling */
-            .content-header h2 {
-                position: relative;
-                display: inline-block;
-                padding-bottom: 10px;
-            }
-            
-            .content-header h2:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 60px;
-                height: 3px;
-                background: #e0a800;
-                transition: width 0.3s ease;
-            }
-            
-            .content-header:hover h2:after {
-                width: 100px;
-            }
-            
-            /* Skills badges (add this section) */
-            .skills-badges {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                margin-top: 20px;
-            }
-            
-            .skill-badge {
-                background: rgba(224,168,0,0.15);
-                border: 1px solid rgba(224,168,0,0.3);
-                padding: 5px 15px;
-                border-radius: 20px;
-                font-size: 0.85rem;
-                transition: all 0.3s ease;
-            }
-            
-            .skill-badge:hover {
-                background: rgba(224,168,0,0.3);
-                transform: translateY(-2px);
-            }
-            
-            /* Responsive improvements */
-            @media (max-width: 768px) {
-                .large-btn .btn {
-                    display: block;
-                    margin: 10px auto;
-                    width: 80%;
-                }
-                
-                .typed-text {
-                    font-size: 1.2rem;
-                }
-                
-                .header h1 {
-                    font-size: 2rem;
-                }
-            }
-            
-            /* Loading animation */
-            .loader {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: #1a1a1a;
-                z-index: 9999;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: opacity 0.5s ease;
-            }
-            
-            .loader.hidden {
-                opacity: 0;
-                pointer-events: none;
-            }
-            
-            .spinner {
-                width: 50px;
-                height: 50px;
-                border: 3px solid rgba(224,168,0,0.3);
-                border-top-color: #e0a800;
-                border-radius: 50%;
-                animation: spin 1s linear infinite;
-            }
-            
-            @keyframes spin {
-                to { transform: rotate(360deg); }
-            }
-            
-            /* Stat counters (add this section) */
-            .stats-container {
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                margin: 40px 0;
-                text-align: center;
-            }
-            
-            .stat-item {
-                padding: 20px;
-                min-width: 120px;
-            }
-            
-            .stat-number {
-                font-size: 2.5rem;
-                font-weight: 700;
-                color: #e0a800;
-            }
-            
-            .stat-label {
-                font-size: 0.9rem;
-                opacity: 0.8;
-                margin-top: 5px;
-            }
-        </style>
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
-        <!-- Loader -->
-        <div class="loader" id="loader">
-            <div class="spinner"></div>
-        </div>
-
         <div class="wrapper">
             <div class="sidebar" style="width: 230px;">
                 <div class="sidebar-header">
-                    <img src="img/portofolio.png" alt="Saudha Hibathullah">
+                    <img src="img/portofolio.png" alt="Image">
                 </div>
                 <div class="sidebar-content">
                     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -355,9 +48,6 @@
                                     <a class="nav-link" href="#service">Service<i class="fa fa-tasks"></i></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#skills-section">Skills<i class="fa fa-code"></i></a>
-                                </li>
-                                <li class="nav-item">
                                     <a class="nav-link" href="#portfolio">Portfolio<i class="fa fa-file-archive"></i></a>
                                 </li>
                                 <li class="nav-item">
@@ -368,18 +58,19 @@
                     </nav>
                 </div>
                 <div class="sidebar-footer" style="width: 230px">
-                    <a href="https://www.linkedin.com/in/saudha-hibathullah-7328602b0/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/saudha-hbtlh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saudha-hibathullah-7328602b0/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                    <a href="https://github.com/saudha-hbtlh" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="content">
                 <!-- Header Start -->
                 <div class="header" id="header">
                     <div class="content-inner">
-                        <p class="animate__animated animate__fadeInUp">I'm</p>
-                        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">Saudha Hibathullah</h1>
-                        <h2 class="animate__animated animate__fadeInUp animate__delay-2s"></h2>
-                        <div class="typed-text animate__animated animate__fadeInUp animate__delay-3s">Data Scientist | Analyst | AI Enthusiast | Automation Expert</div>
+                        <p>I'm</p>
+                        <h1>Saudha Hibathullah</h1>
+                        <h2></h2>
+                        <div class="typed-text">Data Specialist , Coordinator</div>
                     </div>
                 </div>
                 <!-- Header End -->
@@ -387,31 +78,11 @@
                 <!-- Large Button Start -->
                 <div class="large-btn">
                     <div class="content-inner">
-                        <a class="btn" href="Resume.pdf" target="_blank"><i class="fa fa-download"></i> Resume</a>
-                        <a id="hireMeBtn" class="btn" href="#contact"><i class="fa fa-hands-helping"></i> Hire Me</a>
+                        <a class="btn" href="Resume.pdf" target="_blank"><i class="fa fa-download"></i>Resume</a>
+                        <a id="hireMeBtn" class="btn" href="#"><i class="fa fa-hands-helping"></i>Hire Me</a>
                     </div>
                 </div>
                 <!-- Large Button End -->
-                
-                <!-- Stats Counter Section (NEW) -->
-                <div class="stats-container">
-                    <div class="stat-item animate__animated animate__fadeInUp">
-                        <div class="stat-number" id="stat-projects">12+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item animate__animated animate__fadeInUp animate__delay-1s">
-                        <div class="stat-number" id="stat-data">100K+</div>
-                        <div class="stat-label">Data Points Processed</div>
-                    </div>
-                    <div class="stat-item animate__animated animate__fadeInUp animate__delay-2s">
-                        <div class="stat-number" id="stat-clients">5+</div>
-                        <div class="stat-label">Industries Served</div>
-                    </div>
-                    <div class="stat-item animate__animated animate__fadeInUp animate__delay-3s">
-                        <div class="stat-number" id="stat-automation">90%</div>
-                        <div class="stat-label">Automation Efficiency</div>
-                    </div>
-                </div>
                 
                 <!-- About Start -->
                 <div class="about" id="about">
@@ -420,117 +91,68 @@
                             <h2>About Me</h2>
                         </div>
                         <div class="row align-items-center">
+                            
                             <div class="col-md-6 col-lg-12">
                                 <p>
-                                    I'm <strong>Saudha</strong>, a <strong>Data Scientist and Analyst</strong> with a passion for solving complex puzzles hidden inside massive datasets. Uncovering patterns that drive business decisions is what motivates me every day.
+                                    I'm Saudha, a Coordinator and Data Specialist with a knack for puzzles. Big data sets are like massive puzzles waiting to be solved, and uncovering hidden patterns is what motivates me.
                                 </p>
                                 <p>
-                                    With expertise in <strong>Python, SQL, Machine Learning, and BI tools</strong>, I transform raw, messy data into <strong>actionable insights</strong>. Whether it's building predictive models, automating workflows, or creating stunning visualizations — I've got you covered.
+                                    Dedicated to collaborating with organizations eager to maximize their data potential, I'm here to guide you through every stage of the journey. Whether we're brainstorming data metrics, ensuring precise data capture, or delivering impactful insights, I've got you covered. Let's work together to transform your data into actionable insights that drive evidence-based decisions and captivate new audiences.
                                 </p>
-                                <p>
-                                    <strong>What sets me apart:</strong> I don't just analyze data — I tell stories that drive action. I build tools that save hours of manual work. I stay ready to learn any technology that creates value for your business.
-                                </p>
-                                <div class="skills-badges">
-                                    <span class="skill-badge">🐍 Python</span>
-                                    <span class="skill-badge">📊 SQL</span>
-                                    <span class="skill-badge">🤖 Machine Learning</span>
-                                    <span class="skill-badge">📈 Power BI</span>
-                                    <span class="skill-badge">🎨 Tableau</span>
-                                    <span class="skill-badge">⚡ Automation</span>
-                                    <span class="skill-badge">🧠 NLP</span>
-                                    <span class="skill-badge">📐 A/B Testing</span>
-                                </div>
-                                <a id="hireBtn" class="btn" href="#contact" style="margin-top: 20px;"><i class="fa fa-paper-plane"></i> Work With Me</a>
+                                <a <a id="hireBtn" class="btn" href="#">Hire Me</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- About End -->
 
-                <!-- Service Start -->
-                <div class="service" id="service">
+                 <!-- Service Start -->
+                 <div class="service" id="service">
                     <div class="content-inner">
                         <div class="content-header">
-                            <h2>What I Do</h2>
+                            <h2>Service</h2>
                         </div>
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="srv-col">
                                     <i class="fa fa-industry"></i>
-                                    <h3>Data Management & Automation</h3>
-                                    <p>Data harvesting, cleaning, reshaping, and end-to-end workflow automation. I build scripts that save teams hundreds of hours annually.</p>
+                                    <h3>Management</h3>
+                                    <p>Data harvesting, cleaning and reshaping. Development of automated workflows.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="srv-col">
                                     <i class="fa fa-search"></i>
-                                    <h3>Predictive Analytics & ML</h3>
-                                    <p>Maximize value from your data with prediction models, customer behavior forecasting, and machine learning techniques (AUC 0.9+ performance).</p>
+                                    <h3>Analytics</h3>
+                                    <p>Maximize the value from your data with prediction models and machine learning techniques, for example by predicting the behavior of your customer or targeting the right one.
+
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="srv-col">
-                                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
-                                    <h3>Data Visualization</h3>
-                                    <p>Transform complex data into inspiring, interactive dashboards using Power BI, Tableau, and Looker. Turn stakeholders into data believers.</p>
+                                    <i  class="fa fa-paint-brush" aria-hidden="true""></i>
+                                    <h3>DataViz</h3>
+                                    <p>Present your data in an inspiring way by using an infographic rather than a piece of text. I create interactive infographics which can be used internally or publicly.</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="srv-col">
                                     <i class="fa fa-wrench"></i>
-                                    <h3>Data Architecture & Pipelines</h3>
-                                    <p>Building scalable data pipelines, integrating disparate sources, ensuring data quality, and implementing robust storage solutions.</p>
+                                    <h3>Data Architecture</h3>
+                                    <p>Building data pipelines, integrating disparate data sources, ensuring data quality and integrity, and implementing scalable storage </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Service End -->
-
-                <!-- Skills Section (NEW) -->
-                <div class="about" id="skills-section">
-                    <div class="content-inner">
-                        <div class="content-header">
-                            <h2>Technical Arsenal</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h4><i class="fa fa-database"></i> Data & Analytics</h4>
-                                <ul style="list-style: none; padding-left: 0;">
-                                    <li>✓ Advanced SQL (Joins, Windows, Aggregations)</li>
-                                    <li>✓ Python (Pandas, NumPy, Scikit-learn)</li>
-                                    <li>✓ ETL Pipelines & Data Warehousing</li>
-                                    <li>✓ Google BigQuery</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h4><i class="fa fa-chart-line"></i> Visualization & BI</h4>
-                                <ul style="list-style: none; padding-left: 0;">
-                                    <li>✓ Tableau (Interactive Dashboards)</li>
-                                    <li>✓ Power BI (DAX & Power Query)</li>
-                                    <li>✓ Looker & Excel Advanced</li>
-                                    <li>✓ Google Data Studio</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h4><i class="fa fa-robot"></i> ML & AI</h4>
-                                <ul style="list-style: none; padding-left: 0;">
-                                    <li>✓ Regression & Classification</li>
-                                    <li>✓ NLP & Sentiment Analysis</li>
-                                    <li>✓ A/B Testing & Hypothesis Testing</li>
-                                    <li>✓ LLM Prompt Engineering</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Skills Section End -->
+                <!-- Service Start -->
                 
                 <!-- Portfolio Start -->
                 <div class="portfolio" id="portfolio">
                     <div class="content-inner">
                         <div class="content-header">
-                            <h2>Featured Projects</h2>
+                            <h2>Portfolio</h2>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
@@ -549,32 +171,34 @@
                             <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/Attrition1.png" class="img-fluid" alt="Attrition HR Analysis">
-                                        <a href="Attrition.pdf" target="_blank" class="link-details" title="View Report"><i class="fa fa-link"></i></a>
+                                        <img src="img/Attrition1.png" class="img-fluid" alt="">
+                                        <a href="Attrition.pdf" target="_blank"  class="link-details" title="View the project"><i class="fa fa-link"></i></a>
                                         <a href="Attrition.html" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a class="portfolio-title" href="#">Attrition HR Data Analysis <span>Power BI</span></a>
+                                        <a class="portfolio-title" href="#">Attrition HR Data Analysis<span>Power BI</span></a>
                                     </figure>
                                 </div>
                             </div>
                             
+
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/georgia1.png" class="img-fluid" alt="Real Estate Price Prediction">
-                                        <a href="https://github.com/saudha-hbtlh/Georgia-RealEstate-Price-Prediction/tree/main" target="_blank" class="link-details" title="View on GitHub"><i class="fa fa-link"></i></a>
+                                        <img src="img/georgia1.png" class="img-fluid" alt="">
+                                        <a href="https://github.com/saudha-hbtlh/Georgia-RealEstate-Price-Prediction/tree/main" target="_blank" class="link-details" title="View the project"><i class="fa fa-link"></i></a>
                                         <a href="georgia.html" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a class="portfolio-title" href="#">Georgia Real Estate Price Prediction <span>ML Model</span></a>
+                                        <a class="portfolio-title" href="#">Georgia Real Estate Price Prediction Web App <span>Predictive Model</span></a>
                                     </figure>
                                 </div>
                             </div>
+
                             
                             <div class="col-lg-4 col-md-6 portfolio-item tableau">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/premium.png" class="img-fluid" alt="Premium Shipping Dashboard">
-                                        <a href="https://public.tableau.com/views/Premiumshipping_17243006237190/SalesandShipping?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="link-details" title="View Dashboard"><i class="fa fa-link"></i></a>
+                                        <img src="img/premium.png" class="img-fluid" alt="">
+                                        <a href="https://public.tableau.com/views/Premiumshipping_17243006237190/SalesandShipping?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="link-details" title="View the project"><i class="fa fa-link"></i></a>
                                         <a href="Premium shipping Idea Report.pdf" target="_blank" class="link-preview" title="Analysis Report"><i class="fa fa-eye"></i></a>
-                                        <a class="portfolio-title" href="#">Premium Shipping Evaluation <span>Tableau</span></a>
+                                        <a class="portfolio-title" href="#">Premium Shipping Option- Idea Evaluation Dashboard <span>Tableau</span></a>
                                     </figure>
                                 </div>
                             </div>
@@ -582,9 +206,9 @@
                             <div class="col-lg-4 col-md-6 portfolio-item dig-mar">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/vg5.png" class="img-fluid" alt="Video Game Market Trends">
+                                        <img src="img/vg5.png" class="img-fluid" alt="">
                                         <a href="vg.html" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a class="portfolio-title" href="#">Video Game Market Trends <span>Power BI</span></a>
+                                        <a class="portfolio-title" href="#">Market Trends of Video Games <span>Power BI</span></a>
                                     </figure>
                                 </div>
                             </div>
@@ -592,23 +216,27 @@
                             <div class="col-lg-4 col-md-6 portfolio-item tableau">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/crime_data.png" class="img-fluid" alt="LA Crime Data">
-                                        <a href="https://public.tableau.com/views/LosAngelesCrimeData_17155264809740/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="link-details" title="View Dashboard"><i class="fa fa-link"></i></a>
+                                        <img src="img/crime_data.png" class="img-fluid" alt="">
+                                        <a href="https://public.tableau.com/views/LosAngelesCrimeData_17155264809740/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank"  class="link-details" title="View the project"><i class="fa fa-link"></i></a>
                                         <a href="crime.html" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a class="portfolio-title" href="#">Crime Watch LA <span>Tableau</span></a>
+                                        <a class="portfolio-title" href="#">Crime Watch LA: Interactive Data Insights<span>Tableau</span></a>
                                     </figure>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 portfolio-item web-des">
                                 <div class="portfolio-wrap">
                                     <figure>
-                                        <img src="img/sales.png" class="img-fluid" alt="Sales Sheet Scanner">
-                                        <a href="https://github.com/saudha-hbtlh/Sales-Sheet-Scanner" target="_blank" class="link-details" title="View on GitHub"><i class="fa fa-link"></i></a>
+                                        <img src="img/sales.png" class="img-fluid" alt="">
+                                        <a href="https://github.com/saudha-hbtlh/Sales-Sheet-Scanner" target="_blank" class="link-details" title="View the project"><i class="fa fa-link"></i></a>
                                         <a href="salesmodel.html" class="link-preview" title="Preview"><i class="fa fa-eye"></i></a>
-                                        <a class="portfolio-title" href="#">Sales Sheet Scanner <span>Automation Tool</span></a>
+                                        <a class="portfolio-title" href="#">Sales Sheet Scanner <span>Descriptive Model</span></a>
                                     </figure>
                                 </div>
                             </div>
+
+                        
+
+
                         </div>
                     </div>
                 </div>
@@ -618,19 +246,19 @@
                 <div class="contact" id="contact">
                     <div class="content-inner">
                         <div class="content-header">
-                            <h2>Let's Connect</h2>
+                            <h2>Contact</h2>
                         </div>
                         <div class="row align-items-center">
                             <div class="col-md-6">
                                 <div class="contact-info">
-                                    <p><i class="fa fa-user"></i> Saudha Hibathullah</p>
-                                    <p><i class="fa fa-tag"></i> Data Scientist & Analyst</p>
-                                    <p><i class="fa fa-envelope"></i> <a href="mailto:saudha.hbtlh@gmail.com">saudha.hbtlh@gmail.com</a></p>
-                                    <p><i class="fa fa-phone"></i> <a href="tel:+971555597058">+971 55 559 7058</a></p>
-                                    <p><i class="fa fa-map-marker"></i> United Arab Emirates (Remote Ready)</p>
+                                    <p><i class="fa fa-user"></i>Saudha Hibathullah</p>
+                                    <p><i class="fa fa-tag"></i>Data Scientist & Analyst</p>
+                                    <p><i class="fa fa-envelope"></i><a href="mailto:saudha.hbtlh@gmail.com">saudha.hbtlh@gmail.com</a></p>
+                                    <p><i class="fa fa-phone"></i><a href="tel:+94762525995">+971555597058</a></p>
+                                    <p><i class="fa fa-map-marker"></i>United Arab Emirates</p>
                                     <div class="social">
-                                        <a class="btn" href="https://www.linkedin.com/in/saudha-hibathullah-7328602b0/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                        <a class="btn" href="https://github.com/saudha-hbtlh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                        <a class="btn" href="https://www.linkedin.com/in/saudha-hibathullah-7328602b0/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href="https://github.com/saudha-hbtlh" target="_blank"><i class="fab fa-github"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -639,51 +267,58 @@
                                     <input type="hidden" name="access_key" value="69e01847-ccc5-4aa5-8fdf-05f185cad42c">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                                            <input type="text" class="form-control" placeholder="Your Name" name="name">
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                                            <input type="email" class="form-control" placeholder="Your Email" name="email">
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                                        <input type="text" class="form-control" placeholder="Subject" name="subject">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="5" placeholder="Message" name="message" required></textarea>
+                                        <textarea class="form-control" rows="5" placeholder="Message" name="message"></textarea>
                                     </div>
-                                    <div><button class="btn" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button></div>
+                                    <div><button class="btn" type="submit">Send Message</button></div>
                                 </form>
                                 <script>
                                     document.addEventListener("DOMContentLoaded", function() {
+                                        // Get the form element
                                         const form = document.getElementById("myForm");
                                         
-                                        if (form) {
-                                            form.addEventListener("submit", function(event) {
-                                                event.preventDefault();
-                                                submitForm();
-                                            });
-                                        }
+                                        // Add event listener for form submission
+                                        form.addEventListener("submit", function(event) {
+                                            // Prevent the default form submission
+                                            event.preventDefault();
+                                            
+                                            // Submit the form data asynchronously
+                                            submitForm();
+                                        });
                                         
+                                        // Function to submit form data asynchronously
                                         function submitForm() {
+                                            // Assuming you are using fetch API to submit the form data
                                             fetch(form.action, {
                                                 method: form.method,
                                                 body: new FormData(form)
                                             })
                                             .then(response => {
+                                                // Check if the form submission was successful
                                                 if (response.ok) {
+                                                    // Clear the form fields
                                                     form.reset();
-                                                    alert("✓ Message sent successfully! I'll reach out to you shortly.");
+                                                    alert("Message sent successfully! I'll reach you out shortly");
                                                 } else {
-                                                    throw new Error("Message failed to send.");
+                                                    throw new Error("Message failed..");
                                                 }
                                             })
                                             .catch(error => {
                                                 console.error("Error:", error);
-                                                alert("❌ Message failed to send. Please email me directly at saudha.hbtlh@gmail.com");
                                             });
                                         }
                                     });
                                 </script>
+                                
                             </div>
                         </div>
                     </div>
@@ -694,13 +329,11 @@
                 <div class="footer">
                     <div class="content-inner">
                         <div class="row align-items-center">
-                            <div class="col-md-12 text-center">
-                                <p style="margin: 0;">&copy; 2025 Saudha Hibathullah. Transforming data into decisions.</p>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
-                <!-- Footer End -->
+                <!-- Footer Start -->
             </div>
         </div>
         
@@ -719,63 +352,5 @@
         
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        
-        <!-- Additional JavaScript for enhancements -->
-        <script>
-            // Hide loader after page loads
-            window.addEventListener('load', function() {
-                const loader = document.getElementById('loader');
-                if (loader) {
-                    setTimeout(function() {
-                        loader.classList.add('hidden');
-                    }, 500);
-                }
-            });
-            
-            // Smooth scroll for Hire Me buttons
-            document.querySelectorAll('#hireMeBtn, #hireBtn').forEach(btn => {
-                btn.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const contactSection = document.getElementById('contact');
-                    if (contactSection) {
-                        contactSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-            });
-            
-            // Typed text initialization (enhanced)
-            if (document.querySelector('.typed-text')) {
-                var typed_strings = ['Data Scientist 📊', 'Analytics Expert 📈', 'ML Enthusiast 🤖', 'Automation Specialist ⚡'];
-                var typed = new Typed('.typed-text', {
-                    strings: typed_strings,
-                    typeSpeed: 80,
-                    backSpeed: 50,
-                    backDelay: 2000,
-                    loop: true
-                });
-            }
-            
-            // Navbar active link highlighting
-            const sections = document.querySelectorAll('section, div[id]');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 100;
-                    const sectionHeight = section.clientHeight;
-                    if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-                        current = section.getAttribute('id');
-                    }
-                });
-                
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${current}`) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-        </script>
     </body>
 </html>
