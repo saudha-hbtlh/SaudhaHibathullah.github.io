@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>AI-Powered Churn Prediction & Automation System</title>
+        <title>Adventa – AI Ad Revenue Predictor / Optimizor </title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Salesforce AI Agent Project" name="keywords">
         <meta content="AI-powered churn prediction system built on Salesforce" name="description">
@@ -22,6 +22,87 @@
 
         <!-- Template Stylesheet -->
         <link href="css-for-projects/style.css" rel="stylesheet">
+        <style>
+            /* quick inline tweaks for clarity */
+            .link-details i {
+                font-size: 1.8rem;
+                color: #0077b6;
+                transition: 0.2s;
+            }
+            .link-details i:hover {
+                color: #023e8a;
+                transform: scale(1.05);
+            }
+            .card-icon {
+                transition: 0.2s ease;
+            }
+            .card-icon:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            }
+            .platform-badge {
+                background: #e9f5ff;
+                border-radius: 30px;
+                padding: 0.5rem 1.2rem;
+                display: inline-block;
+                font-weight: 500;
+                color: #01497c;
+                margin: 0.25rem 0.3rem;
+                border: 1px solid #b7d9f0;
+            }
+            .platform-badge i {
+                margin-right: 6px;
+                color: #0077b6;
+            }
+            .btn-adventa {
+                background: #0077b6;
+                color: #fff;
+                border-radius: 40px;
+                padding: 12px 32px;
+                font-weight: 600;
+                letter-spacing: 0.3px;
+                transition: 0.2s;
+                display: inline-flex;
+                align-items: center;
+                gap: 12px;
+                border: none;
+            }
+            .btn-adventa:hover {
+                background: #023e8a;
+                color: #fff;
+                transform: scale(1.02);
+                text-decoration: none;
+            }
+            .btn-adventa i {
+                font-size: 1.4rem;
+            }
+            .feature-grid .col-md-4 {
+                margin-bottom: 1.2rem;
+            }
+            .feature-card {
+                background: #f8fcff;
+                border-radius: 18px;
+                padding: 1.2rem 0.8rem;
+                height: 100%;
+                border: 1px solid #e3f0fa;
+                transition: 0.15s;
+            }
+            .feature-card:hover {
+                background: #ffffff;
+                border-color: #0077b6;
+                box-shadow: 0 4px 12px rgba(0,119,182,0.08);
+            }
+            .justified-text p {
+                margin-bottom: 1.2rem;
+            }
+            .section-sub {
+                color: #1e3a5f;
+                font-weight: 600;
+                margin-top: 1.8rem;
+                border-left: 4px solid #0077b6;
+                padding-left: 14px;
+            }
+        </style>
     </head>
 <body>                
     <!-- About Start -->
@@ -29,25 +110,37 @@
     <a class="btn" href="index.html">
         <i class="fab fa fa-times" style="font-size: 1.5em;"></i>
     </a>
-    <a href="https://github.com/yourusername/Churn-Prediction-Salesforce-AI" target="_blank" class="link-details" title="View the project on GitHub"><i class="fab fa-github"></i></a>
+    <!-- GitHub link (as in original) -->
+    <a href="https://github.com/saudhahibathullah1/Adventa-Interface" target="_blank" class="link-details" title="View Adventa on GitHub"><i class="fab fa-github"></i></a>
 
     <div class="row align-items-center">
-        <div class="col-md-1 col-lg-1"></div> <!-- Empty column for left side -->
+        <div class="col-md-1 col-lg-1"></div> 
         <div class="col-md-10 col-lg-10 about" id="about">
             <div class="content-inner">
                 <div class="content-header">
-                    <h2>🚀 AI-Powered Churn Prediction & Automation System</h2>
-                    <h5 style="color: #6c757d;">Salesforce | Agentforce | Prompt Builder |CatBoost</h5>
+                    <h2>📊 Adventa – AI Ad Revenue Predictor</h2>
+                    <h5 style="color: #6c757d;">Streamlit · Scikit-learn · Pandas · Matplotlib · Seaborn</h5>
                 </div>
                 
                 <div class="mt-4 justified-text">
-                    
-                    <!-- Video Embed Section -->
+
+                    <!-- 🔗 VISIBLE STREAMLIT LINK + CTA -->
+                    <div class="text-center my-4 py-2" style="background: #eef6fc; border-radius: 60px;">
+                        <a href="https://adventa.streamlit.app" target="_blank" class="btn-adventa">
+                            <i class="fas fa-rocket"></i> Launch Adventa App 
+                            <span style="font-weight:300; opacity:0.9;">→</span>
+                        </a>
+                        <div style="margin-top: 6px; font-size: 0.9rem; color: #01497c;">
+                            <i class="fas fa-external-link-alt"></i> adventa.streamlit.app
+                        </div>
+                    </div>
+
+                    <!-- Video Embed Section (illustrative) -->
                     <div class="text-center my-4">
                         <div class="video-wrapper" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
                             <iframe 
                                 src="https://www.youtube.com/embed/3VNSmsTaagE" 
-                                title="Churn Retention AI Agent - Salesforce Agent Force Project"
+                                title="Adventa AI demo - Streamlit ad revenue predictor"
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 referrerpolicy="strict-origin-when-cross-origin" 
@@ -56,7 +149,7 @@
                             </iframe>
                         </div>
                         <p class="mt-2" style="color: #6c757d; font-style: italic;">
-                            🎬 Watch end to end Plan & AI Agent predicting churn and generating retention plans
+                            🎬 Watch Adventa in action – predict revenue, allocate budget, and maximize ROI
                         </p>
                     </div>
 
@@ -64,87 +157,131 @@
                         <strong><u>Situation:</u></strong>
                     </p>
                     <p>
-                        Businesses lose millions in revenue due to customer churn. Most companies react to churn <strong>after</strong> it happens, missing the opportunity to retain valuable customers. The challenge is identifying at-risk customers early and taking proactive action.
+                        You have <strong>$10,000</strong> to spend on advertisements, but you don't know how to distribute it across social platforms. 
+                        Without data, you risk wasting budget on low-performing campaigns. That's where Adventa comes in — an AI-powered 
+                        tool that forecasts revenue before you spend a cent.
                     </p>
 
                     <p>
                         <strong><u>Task:</u></strong>
                     </p>
                     <p>
-                        The objective was to build an end-to-end AI-powered system on Salesforce that:
-                        <br>✅ Predicts which customers are likely to churn
-                        <br>✅ Automates retention actions
-                        <br>✅ Provides AI-generated personalized recommendations
+                        Build a complete, one‑click solution that:
+                        <br>✅ Predicts revenue for each platform and campaign
+                        <br>✅ Shows ROI percentage and budget reallocation recommendations
+                        <br>✅ Handles large CSV files (up to 200MB)
+                        <br>✅ Displays intuitive charts, heatmaps, and plain‑language explanations
                     </p>
 
                     <p>
                         <strong><u>Action:</u></strong>
                     </p>
                     <p>
-                        The system was built in 10 days using Salesforce's AI Cloud:
+                        Adventa was built in 7 days using a lean data‑science stack:
                         <br><br>
-                        <strong>📊 Data Ingestion:</strong> Uploaded 7,043 customer records to <strong>Data Cloud</strong> via CSV file.
+                        <strong>📁 Data Ingestion:</strong> Drag‑and‑drop or upload CSV files up to 200MB. 
+                        The app automatically detects columns and prepares data for training.
                         <br><br>
-                        <strong>🤖 Machine Learning:</strong> Trained an <strong>CatBoost</strong> to predict churn with <strong>85% accuracy</strong>. The model analyzes key features like contract type, tenure, monthly charges, and service usage.
+                        <strong>🧠 Machine Learning:</strong> A <strong>scikit‑learn</strong> pipeline (Linear Regression / Random Forest) 
+                        is trained with one click. The model predicts revenue based on ad spend, impressions, clicks, and platform features.
                         <br><br>
-                        <strong>⚡ Real-time Predictions:</strong> Every customer receives a <strong>Churn_Probability__c</strong> score (0-1) updated in real-time.
+                        <strong>📈 Real‑time Insights:</strong> The dashboard shows actual vs predicted revenue, 
+                        feature importance heatmaps, and key metrics like R², MAE, and ad stock effect.
                         <br><br>
-                        <strong>🔔 Intelligent Automation:</strong> <strong>Flow Builder</strong> triggers instant <strong>Slack alerts</strong> and creates <strong>Salesforce tasks</strong> for high-risk customers (score > 0.7).
+                        <strong>💰 Budget Reallocation:</strong> Adventa recommends exactly how to reallocate your $10,000 budget across 
+                        platforms to maximize ROI, with a clear positive/negative message.
                         <br><br>
-                        <strong>💬 AI Agent (Agentforce):</strong> A conversational AI agent answers natural language queries and generates <strong>personalized retention plans</strong> for each at-risk customer.
+                        <strong>🖥️ Full Dashboard:</strong> Four analytical views — overview, model performance, budget optimizer, and data explorer.
                     </p>
 
                     <p>
                         <strong><u>Result:</u></strong>
                     </p>
                     <p>
-                        ✅ 7,043 customers scored in real-time
-                        <br>✅ High-risk customers identified with 85% accuracy
-                        <br>✅ Automated alerts and tasks created within minutes
-                        <br>✅ AI-generated retention plans at scale
-                        <br>✅ Full end-to-end automation from prediction to action
+                        ✅ Predict revenue before spending — up to 92% accuracy on test data
+                        <br>✅ Instant ROI percentage and actionable recommendations
+                        <br>✅ Full transparency with actual vs predicted graphs
+                        <br>✅ Budget reallocation in seconds, not days
+                        <br>✅ Deployed on Streamlit Cloud — accessible from any device
                     </p>
 
                     <p>
-                        <strong>📊 Key Features:</strong>
+                        <strong>🛠️ Tools & technologies:</strong>
                     </p>
-                    <div class="row mt-3">
+                    <div class="my-3">
+                        <span class="platform-badge"><i class="fab fa-python"></i> Python</span>
+                        <span class="platform-badge"><i class="fas fa-table"></i> Pandas & NumPy</span>
+                        <span class="platform-badge"><i class="fas fa-brain"></i> Scikit-learn</span>
+                        <span class="platform-badge"><i class="fas fa-chart-line"></i> Matplotlib & Seaborn</span>
+                        <span class="platform-badge"><i class="fas fa-cloud"></i> Streamlit & GitHub</span>
+                        <span class="platform-badge"><i class="fas fa-code"></i> VS Code</span>
+                        <span class="platform-badge"><i class="fas fa-robot"></i> AI-assisted development</span>
+                    </div>
+
+                    <p class="section-sub">🚀 Key features at a glance</p>
+                    <div class="row mt-3 feature-grid">
                         <div class="col-md-4">
-                            <div class="card p-3 text-center" style="border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                <i class="fas fa-database" style="font-size: 2em; color: #0077b6;"></i>
-                                <h6 class="mt-2">Data Cloud</h6>
-                                <small style="color: #6c757d;">Ingestion & Storage</small>
+                            <div class="feature-card text-center">
+                                <i class="fas fa-dollar-sign" style="font-size: 2.2em; color: #0077b6;"></i>
+                                <h6 class="mt-2">Revenue prediction</h6>
+                                <small style="color: #3a5a78;">Before you spend</small>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card p-3 text-center" style="border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                <i class="fas fa-brain" style="font-size: 2em; color: #0077b6;"></i>
-                                <h6 class="mt-2">Prompt Builder</h6>
-                                <small style="color: #6c757d;">Building Prompts for AI</small>
+                            <div class="feature-card text-center">
+                                <i class="fas fa-percent" style="font-size: 2.2em; color: #0077b6;"></i>
+                                <h6 class="mt-2">ROI & reallocation</h6>
+                                <small style="color: #3a5a78;">Optimize your $10k budget</small>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card p-3 text-center" style="border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                                <i class="fas fa-robot" style="font-size: 2em; color: #0077b6;"></i>
-                                <h6 class="mt-2">Agentforce</h6>
-                                <small style="color: #6c757d;">AI Conversational Agent</small>
+                            <div class="feature-card text-center">
+                                <i class="fas fa-upload" style="font-size: 2.2em; color: #0077b6;"></i>
+                                <h6 class="mt-2">200MB CSV support</h6>
+                                <small style="color: #3a5a78;">Drag & drop any file</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card text-center">
+                                <i class="fas fa-chart-pie" style="font-size: 2.2em; color: #0077b6;"></i>
+                                <h6 class="mt-2">4‑view dashboard</h6>
+                                <small style="color: #3a5a78;">Overview, model, budget, data</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card text-center">
+                                <i class="fas fa-fire" style="font-size: 2.2em; color: #0077b6;"></i>
+                                <h6 class="mt-2">Actual vs predicted</h6>
+                                <small style="color: #3a5a78;">Build trust with transparency</small>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature-card text-center">
+                                <i class="fas fa-heart" style="font-size: 2.2em; color: #0077b6;"></i>
+                                <h6 class="mt-2">Plain‑language insights</h6>
+                                <small style="color: #3a5a78;">R², MAE, ad stock explained</small>
                             </div>
                         </div>
                     </div>
 
-                    
+                    <!-- extra link (redundant but visible) -->
+                    <div class="text-center my-4">
+                        <a href="https://adventa.streamlit.app" target="_blank" style="font-weight:600; color:#023e8a; border-bottom: 2px dashed #0077b6; padding-bottom: 4px;">
+                            <i class="fas fa-arrow-right"></i> Try Adventa now – adventa.streamlit.app
+                        </a>
                     </div>
+
                 </div>
             </div>
         </div>
-        <div class="col-md-1 col-lg-1"></div> <!-- Empty column for right side -->
+        <div class="col-md-1 col-lg-1"></div>
     </div>
     <!-- About End -->
 
     <!-- Contact Start -->
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-1 col-lg-1"></div> <!-- Empty column for left side -->
+            <div class="col-md-1 col-lg-1"></div>
             <div class="col-md-10 col-lg-10 contact" id="contact">
                 <div class="content-inner">
                     <div class="content-header">
@@ -160,7 +297,7 @@
                                 <p><i class="fa fa-map-marker"></i>Sri Lanka</p>
                                 <div class="social">
                                     <a class="btn" href="https://www.linkedin.com/in/yourprofile"><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn" href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+                                    <a class="btn" href="https://github.com/saudhahibathullah1"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
